@@ -2,7 +2,6 @@
   name = Karl Hepworth
   email = karl.hepworth@gmail.com
 [core]
-  editor = vi
   excludesfile = ~/.gitignore
 [color]
   branch = auto
@@ -15,8 +14,6 @@
   helper = osxkeychain
 [push]
   default = simple
-[merge]
-  tool = kdiff3
 [difftool]
   prompt = false
 [alias]
