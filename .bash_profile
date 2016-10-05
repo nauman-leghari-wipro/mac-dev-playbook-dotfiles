@@ -42,9 +42,26 @@ fi
 export PATH="$brew_prefix/opt/php56/bin:$PATH"
 
 # Vagrant configuration.
- export VAGRANT_DEFAULT_PROVIDER='virtualbox'
+export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 
 # Disable cowsay in Ansible.
 export ANSIBLE_NOCOWS=1
+
+# Python
+eval "$($HOME/.pyenv/bin/pyenv init -)"
+
+# Ruby
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="$HOME/.rvm/gems/ruby-2.3.0/bin:${PATH}";
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rvm/gems/ruby-2.3.0/bin:$PATH"
+
+# NodeJS
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH=$PATH:$(npm config --global get prefix)/bin;
+export PATH="$PATH:$HOME/.nvm/versions/node/v4.1.2/bin/node"
+export PATH=$PATH:$HOME/.nvm/v5.10.1/bin;
+export PATH=$PATH:$HOME/.nvm/v6.2.2/bin;
 
 shopt -s extdebug
