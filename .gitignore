@@ -2,3 +2,10 @@
 *.LSOverride
 Thumbs.db
 .bundle
+.sass-cache
+.sass-cache/*
+.scss-cache
+.scss-cache/*
+.idea
+.idea/*
+atlassian-ide-plugin.xml
