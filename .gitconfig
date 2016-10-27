@@ -1,6 +1,6 @@
 [user]
-  name = Karl Hepworth
-  email = karl.hepworth@gmail.com
+  name = Nauman Leghari
+  email = nauman.leghari@wipro.com
 [core]
   excludesfile = ~/.gitignore
 [color]
@@ -9,7 +9,7 @@
   interactive = auto
   status = auto
 [web]
-  browser = google-chrome
+  browser = safari
 [credential]
   helper = osxkeychain
 [push]
@@ -23,4 +23,4 @@
   cam = commit -am
   d = diff
   dc = diff --cached
-  l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
+  l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative

@@ -38,17 +38,11 @@ if [ -f $brew_prefix/etc/bash_completion ]; then
   . $brew_prefix/etc/bash_completion
 fi
 
-# Use brew-installed PHP binaries.
-export PATH="$brew_prefix/opt/php56/bin:$PATH"
-
 # Vagrant configuration.
 export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 
 # Disable cowsay in Ansible.
 export ANSIBLE_NOCOWS=1
-
-# Python
-eval "$($HOME/.pyenv/bin/pyenv init -)"
 
 # Ruby
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
